@@ -1,0 +1,6 @@
+SSH Connection. 
+When ssh trust connection is established between 2 machines, 
+there is a ~/.ssh/authorized_keys file that stores a copy of other machine's public ssh ID. 
+Each line in the file is an entry for one user from another machine for non-prompt access. 
+Each line by default ends with the format "username@hostname_of_machine". This last part is a comment. Removing the comment still makes the
+SSH trust entry a valid entry. You can repurpose the comment content in case you are manipulating/managing SSH keys.
